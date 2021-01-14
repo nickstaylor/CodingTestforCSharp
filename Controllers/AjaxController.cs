@@ -10,11 +10,13 @@ namespace CodingTest.Controllers
     {
         public IActionResult Index()
         {
+            ViewData["Message"] = "Wassup Dogg";
             return View();
         }
 
         public IActionResult Data()
         {
+            ViewData["Message"] = "Wassup Dogg";
             return PartialView();
         }
     }
